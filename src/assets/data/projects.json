@@ -1,0 +1,130 @@
+{
+  "projects": [
+    {
+      "name": "Still not done",
+      "info": "Still Not Done is a to-do app built with React that helps users manage their tasks with ease. It uses Zustand for state management and styled-components for styling, offering a smooth and responsive user experience. Users can add new tasks, mark them as complete, delete them and reorder them in the list. Completed tasks appear in a separate section to keep things organized. The app also uses localStorage so the task list is saved between sessions and remains available even after the browser is closed.",
+      "image": "./img/todo.png",
+      "alt": "To-do App",
+      "collab": "Solo project",
+      "tags": [
+        "JavaScript",
+        "React",
+        "useState",
+        "useEffect",
+        "Styled-components",
+        "Zustand"
+      ],
+      "netlify": "https://stillnotdone.netlify.app/",
+      "github": "https://github.com/ssofiejohansson/js-project-todo"
+    },
+    {
+      "name": "Happy Thoughts",
+      "info": "Happy Thoughts is a simple messaging app built with React that lets users share short, uplifting messages with the world. It connects to a shared public API, allowing anyone to post and read happy thoughts in real time. Messages appear in reverse chronological order, with the newest thoughts at the top. Each thought displays the message content and a like count, which can be increased by clicking the heart button. The app updates automatically after new thoughts are posted or liked, creating a smooth and interactive user experience.",
+      "image": "./img/happythoughts.webp",
+      "alt": "Happy Thoughts App",
+      "collab": "Team project",
+      "tags": [
+        "JavaScript",
+        "React",
+        "useState",
+        "useEffect",
+        "Styled-components",
+        "JSON"
+      ],
+      "netlify": "https://reliable-truffle-5d0fac.netlify.app/",
+      "github": "https://github.com/ssofiejohansson/js-project-happy-thoughts"
+    },
+    {
+      "name": "Weather app",
+      "info": "A sleek weather application built with TypeScript, designed to deliver real-time weather updates and a 4-day forecast. It fetches data from the OpenWeather API and presents it through a clean, animated user interface. The app adapts seamlessly to all screen sizes and includes smooth CSS animations that enhance the overall experience without distraction.",
+      "image": "./img/heatherweather.webp",
+      "alt": "Weather App",
+      "collab": "Team project",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "TypeScript",
+        "APIs"
+      ],
+      "netlify": "https://heatherweather.netlify.app/",
+      "github": "https://github.com/ssofiejohansson/js-project-weather-app"
+    },
+    {
+      "name": "Movie App",
+      "info": "The Movie App is an app listing movies built with React that lets users browse popular films and discover new releases. It uses React Router for seamless navigation between pages and styled-components for custom styling. Users can click on any movie to view more details, including the release date, synopsis and additional information. Loading states are handled smoothly to enhance the user experience while data is being fetched.",
+      "image": "./img/.webp",
+      "alt": "Movie App",
+      "collab": "Team project",
+      "tags": [
+        "React",
+        "React Router",
+        "JavaScript",
+        "Styled-components"
+      ],
+      "netlify": "https://effervescent-praline-71a88e.netlify.app/",
+      "github": "https://github.com/ssofiejohansson/js-project-movies"
+    },
+    {
+      "name": "Online Quiz",
+      "info": "An accessible online quiz about web accessibility, built with semantic HTML, CSS, and JavaScript. The interface supports full keyboard navigation, and all elements were tested for color contrast and ARIA compliance using different tools. The app includes a high contrast mode toggle and an optional reduced motion setting to support a wider range of user needs and preferences.",
+      "image": "./img/quiz.webp",
+      "alt": "Online Quiz App",
+      "collab": "Team project",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "TypeScript"
+      ],
+      "netlify": "https://accessibility-simon-sofie.netlify.app/",
+      "github": "https://github.com/ssofiejohansson/accessibility-sofie-simon"
+    },
+    {
+      "name": "Portfolio",
+      "info": "A responsive portfolio website designed to showcase my skills and projects. Built with React components and props, featuring a clean, accessible design based on Figma guidelines. Key features include a tech skills section, project links to GitHub and Netlify and styled-components for modular styling.",
+      "image": "./img/portfolio.webp",
+      "alt": "Portfolio Project",
+      "collab": "Solo project",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "React",
+        "Styled-components",
+        "JavaScript",
+        "JSON"
+      ],
+      "netlify": "https://ssofiejohansson.netlify.app/",
+      "github": "https://github.com/ssofiejohansson/js-project-portfolio"
+    },
+    {
+      "name": "Recipe Library",
+      "info": "A  web application that helps users discover recipes using dynamic filters and sorting options. Using the Spoonacular API, the app updates in real time as users refine their search, offering a seamless and interactive browsing experience. Key features include multi-filter functionality, a random recipe generator, user feedback when no results are found and interactive step-by-step instructions. To enhance performance and usability, local storage caching, a loading state, and a responsive design were implemented to ensure smooth functionality across all devices.",
+      "image": "./img/recipe.webp",
+      "alt": "Recipe Library App",
+      "collab": "Solo project",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "APIs"
+      ],
+      "netlify": "https://stirring-yeot-236514.netlify.app/",
+      "github": "https://github.com/ssofiejohansson/js-project-recipe-library"
+    },
+    {
+      "name": "Business site",
+      "info": "The website is designed to be fully responsive, ensuring a great user experience for all devices. It features a navigation bar that adjusts based on the screen size, with a fully functional hamburger menu for mobile and tablet devices. The layout is built using CSS Grid for the main structure and Flexbox for smaller components like the cards and articles. The site includes a responsive header with a video, along with a signup form that supports multiple input types.",
+      "image": "./img/happyhooks.webp",
+      "alt": "Business site",
+      "collab": "Solo project",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+      ],
+      "netlify": "https://happyhooks.netlify.app/",
+      "github": "https://github.com/ssofiejohansson/js-project-business-site"
+    }
+  ]
+}
