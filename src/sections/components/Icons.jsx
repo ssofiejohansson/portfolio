@@ -8,6 +8,7 @@ const IconStyling = styled.div`
   gap: 20px;
   font-size: 30px;
   padding-top: 20px;
+  z-index: 200;
 
   svg {
     color: ${({ color }) => color}; 
@@ -42,7 +43,7 @@ export const Icons = ({ color }) => {
         <FontAwesomeIcon icon={faGithub} />
       </a>
       <a
-        href="/CV.pdf"
+        href="./CV.pdf"
         target="_blank"
         rel="noopener noreferrer"
         title="Download my CV"

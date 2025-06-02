@@ -6,7 +6,7 @@ import { Tag } from './Tag';
 const CardContainer = styled.article`
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap:10px;
   padding: 10px;
   flex: 1 1 calc(100% - 40px);
   max-width: 400px;
@@ -24,13 +24,10 @@ const CardContainer = styled.article`
 
 const ProjectImg = styled.img`
     width: 100%;
-    opacity: 0.7;
-    border-top: 6px solid #E48162;
-    border-left: 6px solid #E48162;
+    
 
     &:hover {
-      opacity: 1;
-      transition: all 0.3s ease-in-out;
+      
     }
   `
 
@@ -41,17 +38,25 @@ const ButtonContainer = styled.div`
 
 const TagContainer = styled.div`
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
   gap: 5px;
   `
 
 const ProjectHeading = styled.h2`
-  font-family: var(--font-family-headings);
+   margin: 0; 
+   font-family: var(--font-family-headings);
   color: var(--font-primary);
   text-align: left;
   font-size: 30px;
   font-weight: 500;
+
   `
+
+const ProjectText = styled.p`
+  margin: 0;
+  `
+
 
 export const Cards = () => {
   return (
@@ -73,7 +78,7 @@ export const Cards = () => {
 
           <ProjectHeading> {project.name} </ProjectHeading>
 
-          <p>{project.info}</p>
+          <ProjectText>{project.info}</ProjectText>
 
           <ButtonContainer>
 

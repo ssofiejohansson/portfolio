@@ -6,12 +6,12 @@ const ProjectsContainer = styled.section`
   display: flex;
   flex-wrap: wrap;
   row-gap: 60px; 
-  justify-content: flex-start;
-  padding: 50px 10px;
+  justify-content: center;
+  padding: 80px 60px;
 
   @media (min-width: 768px) {
     column-gap: 60px;
-    row-gap: 80px;
+    row-gap: 60px;
   }
 `;
 
@@ -20,7 +20,6 @@ export const Projects = () => {
   return (
     <>
       <ScrollAnimation>
-        <h2 id="projects">Featured Projects</h2>
         <ProjectsContainer>
           <Cards />
         </ProjectsContainer>

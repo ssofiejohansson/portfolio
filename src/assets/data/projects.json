@@ -7,7 +7,6 @@
       "alt": "To-do App",
       "collab": "Solo project",
       "tags": [
-        "JavaScript",
         "React",
         "useState",
         "useEffect",
@@ -24,7 +23,6 @@
       "alt": "Happy Thoughts App",
       "collab": "Team project",
       "tags": [
-        "JavaScript",
         "React",
         "useState",
         "useEffect",
@@ -41,8 +39,6 @@
       "alt": "Weather App",
       "collab": "Team project",
       "tags": [
-        "HTML5",
-        "CSS3",
         "JavaScript",
         "TypeScript",
         "APIs"
@@ -57,9 +53,9 @@
       "alt": "Movie App",
       "collab": "Team project",
       "tags": [
+        "JavaScript",
         "React",
         "React Router",
-        "JavaScript",
         "Styled-components"
       ],
       "netlify": "https://effervescent-praline-71a88e.netlify.app/",
@@ -87,11 +83,9 @@
       "alt": "Portfolio Project",
       "collab": "Solo project",
       "tags": [
-        "HTML5",
-        "CSS3",
+        "JavaScript",
         "React",
         "Styled-components",
-        "JavaScript",
         "JSON"
       ],
       "netlify": "https://ssofiejohansson.netlify.app/",

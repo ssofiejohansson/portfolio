@@ -1,66 +1,72 @@
 import profileImage from '../assets/img/footer-img.png';
 import styled from 'styled-components';
 import { Icons } from './components/Icons';
-import { ProfileImg } from './Header';
+import { ProfileImg, Title } from './Header';
+
 
 const FooterContainer = styled.footer`
-    display: flex;
-    flex-direction: column-reverse;
-  
-    justify-content: center;
-    align-items: center;
-    padding: 60px 60px; 
-    background: #C35132;
-    color: #FFF;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+  min-height: 100vh;
+
+  @media (max-width: 767px) {
+    background: url(${profileImage}) center/cover no-repeat;
+    position: relative;
+  }
 
   @media (min-width: 768px) {
     flex-direction: row;
-    gap: 100px;
-   
+    height: 100vh;
+    padding-top: 0px;
+    background: none;
   }
 `
 
 const FooterBio = styled.div`
-  display: flex;  
+ display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+
 
   @media (min-width: 768px) {
-    align-items: flex-start;
+    width: 50%;
   }
   `
 
-const FooterHeading = styled.h2`
-  color: var(--secondary);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: 'Mynerve';
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: -5.76px;
-  padding-top: 50px;
+const FooterImg = styled.div`
+  width: 100%;
+  margin: 0;
 
+  @media (max-width: 767px) {
+    display: none;
+  }
   @media (min-width: 768px) {
-    font-size: 70px;
-    padding-top: 0px;
+    width: 50%;
+    display: block;
   }
 `
 
 export const Footer = () => {
   return (
-    <>
-      <FooterContainer id='contact'>
+
+    <FooterContainer>
+
+      <FooterBio>
+        <Title>Let's Talk!</Title>
+        <p>+46(0)72 442 34 97</p>
+        <p>ssofiejohansson@gmail.com</p>
+        <Icons color="var(--primary)" />
+      </FooterBio>
+      <FooterImg>
         <ProfileImg src={profileImage} alt="Profile image" />
-        <FooterBio>
-          <FooterHeading>Let's Talk!</FooterHeading>
-          <p>Sofie Johansson</p>
-          <p>+46(0)72 442 34 97</p>
-          <p>ssofiejohansson@gmail.com</p>
-          <Icons color="var(--secondary)" />
-        </FooterBio>
-      </FooterContainer>
-    </>
+      </FooterImg>
+    </FooterContainer>
+
   )
 }
