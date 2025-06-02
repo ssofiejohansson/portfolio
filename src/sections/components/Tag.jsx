@@ -8,5 +8,5 @@ export const Tag = styled.p`
     text-align: center;
     border-radius: 12px;
     border: 1px solid #333;
-    background: linear-gradient(to right, #FFF4B8, #FFC7D3, #F9A8FF);  
+    
 `
