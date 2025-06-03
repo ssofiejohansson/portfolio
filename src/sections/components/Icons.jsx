@@ -1,55 +1,70 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faFile } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from "styled-components";
 
-const IconStyling = styled.div`
+export const IconContainer = styled.div`
   display: flex;
-  gap: 20px;
-  font-size: 30px;
-  padding-top: 20px;
-  z-index: 200;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+`;
+
+const Icon = styled.a`
+   display: flex;
+  justify-content: center;
+  align-items: center;
+    width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--secondary);
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+  padding: 0;
 
   svg {
-    color: ${({ color }) => color}; 
-    transition: color 0.3s ease; 
-    cursor: pointer;
+    color: inherit;
+    transition: color 0.2s;
+  }
 
-    &:hover {
-      color: var(--complementary);
-       transform: scale(1.3); 
-    
-    }
+  &:hover {
+    background: var(--secondary);
+    color: var(--primary);
   }
 `;
 
-export const Icons = ({ color }) => {
+export const Icons = () => {
   return (
-    <IconStyling color={color}>
-      <a
+    <IconContainer>
+      <Icon
         href="https://www.linkedin.com/in/ssofiejohansson"
         target="_blank"
         rel="noopener noreferrer"
         title="Visit my LinkedIn profile"
       >
         <FontAwesomeIcon icon={faLinkedinIn} />
-      </a>
-      <a
+      </Icon>
+      <Icon
         href="https://github.com/ssofiejohansson"
         target="_blank"
         rel="noopener noreferrer"
         title="Visit my GitHub profile"
       >
         <FontAwesomeIcon icon={faGithub} />
-      </a>
-      <a
-        href="./CV.pdf"
+      </Icon>
+      <Icon
+        href="/CV.pdf"
         target="_blank"
         rel="noopener noreferrer"
         title="Download my CV"
       >
         <FontAwesomeIcon icon={faFile} />
-      </a>
-    </IconStyling>
+      </Icon>
+    </IconContainer>
   );
 };

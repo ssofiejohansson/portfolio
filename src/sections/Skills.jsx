@@ -1,67 +1,78 @@
 import styled from 'styled-components';
-// import { ScrollAnimation } from "./components/ScrollAnimation";
 
-
+import { ScrollAnimation } from "./components/ScrollAnimation";
 
 const SkillsContainer = styled.section`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center; 
-  text-align: center;
-  padding: 20px;
-  gap: 20px;
-  min-height: 100vh;
-  background: linear-gradient(to right, #FFF4B8, #FFC7D3, #F9A8FF);  
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-`
-
-const SkillsList = styled.section` 
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  gap: 20px;
-  justify-content: center;
-
 
   @media (min-width: 768px) {
+    flex-direction: row;
+    height: 100vh;
+    }
+`
+
+const SkillsList = styled.div` 
+  display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  margin-top: 50px;
+
+  @media (min-width: 768px) {
+  align-items: center;
+  width: 50%;
+  margin-top: 0;
+  }
+`
+
+const SkillsRow = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+
+  @media (min-width: 768px) {
+    gap: 12px;
+
     }
 `
 
 const ListColumn = styled.ul`
   list-style: none;
-  margin: 0;
   padding: 0;
 `
 
-const ListRow = styled.ul`
-  list-style: none;
-  margin: 0;
-  padding: 0;
+const TechStack = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  text-align: center;
+  gap: 12px;
+  padding: 40px;
+  background: linear-gradient(to right, #FFF4B8, #FFC7D3, #F9A8FF);  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
   @media (min-width: 768px) {
-    max-width: 800px;
-    }
+  width: 50%;
+  padding: 60px;
+  }
 `
+const ListRow = styled.ul`
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  list-style: none;
 
-const LineItem = styled.hr`
-    border: none;
-
-    @media (min-width: 768px) {
-    border: 3px solid var(--primary);
-    }
+  @media (min-width: 768px) {
+  padding: 0px 40px;
+  max-width: 400px;
+  }
 `
 
 export const Skills = () => {
@@ -70,79 +81,76 @@ export const Skills = () => {
     <SkillsContainer>
       <SkillsList>
 
-        <div>
-          <h3>Code</h3>
+        <SkillsRow>
+          <h3>Frontend </h3>
           <ListColumn>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>React Native</li>
-            <li>Styled Components</li>
-            <li>GitHub</li>
+            <li>Responsive design</li>
+            <li>Styled components</li>
+            <li>Web accessibility</li>
+            <li>State management</li>
+            <li>Debugging</li>
+            <li>Performance optimization</li>
+            <li>Client-side routing</li>
           </ListColumn>
 
-        </div>
-        <LineItem></LineItem>
-        <div>
-          <h3>Toolbox</h3>
+          <h3>Design & UX</h3>
           <ListColumn>
-            <li>Figma</li>
-            <li>Visual Studio</li>
-            <li>Canva</li>
-            <li>Postman</li>
-            <li>Adobe Photoshop</li>
-            <li>Slack</li>
+            <li>UI design</li>
+            <li>UX thinking</li>
+            <li>Prototyping in Figma</li>
+            <li>Accessibility testing tools</li>
+            <li>Mobile-first design</li>
+            <li>Wireframing</li>
+
+          </ListColumn>
+        </SkillsRow>
+
+        <SkillsRow>
+          <h3>Workflow</h3>
+          <ListColumn>
+            <li>Agile development</li>
+            <li>Sprint planning</li>
+            <li>Code reviews</li>
+            <li>Pair & mob programming</li>
+            <li>Git/GitHub workflows</li>
+            <li><Problem-solving></Problem-solving></li>
           </ListColumn>
 
-        </div>
-        <LineItem></LineItem>
-        <div>
-          <h3>More</h3>
+          <h3>Soft Skills</h3>
           <ListColumn>
-            <li>SEO</li>
-            <li>UI Design</li>
-            <li>UX Design</li>
-            <li>Accessibility</li>
-            <li>Development</li>
+            <li>Detail-oriented</li>
+            <li>Communicative</li>
+            <li>Adaptable</li>
+            <li>Solution-oriented</li>
+            <li>Team player</li>
+
           </ListColumn>
-
-        </div>
-        <LineItem></LineItem>
-        <div>
-          <h3>Upcoming</h3>
-          <ListColumn>
-            <li>Node.js</li>
-            <li>MongoDB</li>
-          </ListColumn>
-        </div>
-
-
+        </SkillsRow>
       </SkillsList>
 
+      <TechStack>
+        <h2>Tech stack</h2>
+        <ListRow>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>React Native</li>
+          <li>Zustand</li>
+          <li>Vue</li>
+          <li>Angular</li>
+          <li>Node.js</li>
+          <li>JSON</li>
+          <li>SQL</li>
+          <li>MongoDB</li>
+          <li>APIs</li>
+          <li>npm</li>
+          <li>CMS</li>
+          <li>Postman</li>
 
-      <h2>Tech stack</h2>
-
-      <ListRow className='techStack'>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Flexbox</li>
-        <li>JavaScript</li>
-        <li>TypeScript</li>
-        <li>React</li>
-        <li>React Native</li>
-        <li>Node.js</li>
-        <li>JSON</li>
-        <li>SQL</li>
-        <li>MongoDB</li>
-        <li>Web Accessibility</li>
-        <li>APIs</li>
-        <li>Mob-programming</li>
-        <li>Pair-programming</li>
-        <li>Github</li>
-      </ListRow>
-
+        </ListRow>
+      </TechStack>
     </SkillsContainer>
-
   )
 }

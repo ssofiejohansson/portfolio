@@ -1,29 +1,31 @@
 import styled from 'styled-components';
 
 const ButtonBase = styled.a`
-    text-decoration: none;
-    color: ${({ isPrimary }) => (isPrimary ? 'var(--secondary)' : 'var(--primary)')};
-    width: 100%;
-    border: 2px solid var(--primary); 
-    border-radius: 12px;
-    background-color: ${({ isPrimary }) => (isPrimary ? 'var(--primary)' : 'transparent')}; 
-    cursor: pointer;
-    padding: 10px 16px;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--secondary);
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    padding: 0;
 
     &:hover {
-        background-color: ${({ isPrimary }) => (isPrimary ? 'var(--secondary)' : 'var(--primary)')}; 
-        color: ${({ isPrimary }) => (isPrimary ? 'var(--primary)' : 'var(--secondary)')}; 
+        background: var(--secondary);
+        color: var(--primary);
     }
 `;
 
-export const Button = ({ href, target, rel, buttonText, isPrimary }) => {
+export const Button = ({ href, target, rel, icon, ...props }) => {
     return (
-        <ButtonBase href={href} target={target} rel={rel} isPrimary={isPrimary}>
-            {buttonText}
+        <ButtonBase href={href} target={target} rel={rel} {...props}>
+            {icon}
         </ButtonBase>
     );
 };
