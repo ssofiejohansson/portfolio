@@ -7,7 +7,7 @@ const ProjectsContainer = styled.section`
   flex-wrap: wrap;
   row-gap: 30px; 
   justify-content: center;
-  padding: 60px 20px;
+  padding: 60px 10px;
 
   @media (min-width: 768px) {
   column-gap: 20px;

@@ -1,12 +1,11 @@
 import { faCode, faGlobe, faImage } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
 
 import ProjectList from '../../assets/data/projects.json';
 import { Button } from './Button';
 import { ScrollAnimation } from "./ScrollAnimation";
-import { Tag } from './Tag';
 
 const CardContainer = styled.article`
   display: flex;

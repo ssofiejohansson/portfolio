@@ -59,7 +59,6 @@ export const Footer = () => {
         <p>+46(0)72 442 34 97</p>
         <p>ssofiejohansson@gmail.com</p>
 
-        <Icons />
       </FooterBio>
       <FooterImg>
         <ProfileImg src={profileImage} alt="Sofie Johansson" />

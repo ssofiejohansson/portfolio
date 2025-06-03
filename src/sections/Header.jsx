@@ -42,12 +42,11 @@ max-width: 70%;
 
 export const Bio = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   gap: 12px;
 
    @media (min-width: 768px) {
-    flex-direction: column;
     width: 70%;
   }
 `
