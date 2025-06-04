@@ -1,28 +1,26 @@
 import styled from 'styled-components';
 
-import { ScrollAnimation } from "./components/ScrollAnimation";
-
 const SkillsContainer = styled.section`
   display: flex;
   flex-direction: column;
 
   @media (min-width: 768px) {
     flex-direction: row;
-    height: 100vh;
+    min-height: 100vh;
     }
 `
 
 const SkillsList = styled.div` 
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   gap: 30px;
   padding: 40px;
   min-height: 100dvh;
 
   @media (min-width: 768px) {
-  align-items: center;
+  padding: 60px;
   width: 50%;
   }
 `
@@ -35,6 +33,8 @@ const SkillsRow = styled.div`
 
   @media (min-width: 768px) {
     gap: 12px;
+      align-items: flex-start;
+
     }
 `
 

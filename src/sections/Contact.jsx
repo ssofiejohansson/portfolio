@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import profileImage from '../assets/img/footer-img.png';
+import { ButtonBase } from './components/Button'
 import { Icons } from './components/Icons';
 import { ProfileImg, Title } from './Header';
 
@@ -8,6 +9,7 @@ const FooterContainer = styled.footer`
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
+ 
 
   @media (max-width: 767px) {
     background: url(${profileImage}) center/cover no-repeat;
@@ -24,15 +26,18 @@ const FooterContainer = styled.footer`
 const FooterBio = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 12px;
   width: 100%;
   padding: 20px;
+  margin-top: 50px;
 
   @media (min-width: 768px) {
     width: 50%;
-    margin-top: 0px;
+    align-items: center;
+  justify-content: center;
+   margin-top: 0px;
   }
   `
 
@@ -54,7 +59,8 @@ export const Footer = () => {
     <FooterContainer>
 
       <FooterBio>
-        <Title>Let's Talk!</Title>
+        <Title>Let’s talk frontend, creative chaos or just play table tennis.</Title>
+
         <p>+46(0)72 442 34 97</p>
         <p>ssofiejohansson@gmail.com</p>
         <Icons />

@@ -1,8 +1,9 @@
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import styled from "styled-components"
-import { useState } from "react";
+
 import { Icons } from "./components/Icons"
 
 const NavContainer = styled.nav`
@@ -18,9 +19,10 @@ const NavContainer = styled.nav`
     top: 0;
     right: 0;   
     left: auto;
-    width: 100%;
+     width: 80px; 
     z-index: 100;
     padding: 10px;
+   
   }
 `
 const HamburgerButton = styled.button`
@@ -63,6 +65,10 @@ const MobileMenuOverlay = styled.div`
   transition: opacity 0.3s;
   opacity: ${({ open }) => (open ? 1 : 0)};
   pointer-events: ${({ open }) => (open ? "auto" : "none")};
+
+   @media (min-width: 768px) {
+    display: none;
+  }
 `;
 
 const NavRow = styled.div`
@@ -73,6 +79,7 @@ const NavRow = styled.div`
     flex-direction: row;
     margin-right: 20px;
     gap: 20px;
+ 
   }
 `
 
@@ -135,8 +142,26 @@ const NavItem = styled.a`
   }
 `
 
+const TitleMobile = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  padding: 5px;
+  width: 100vw;
+  z-index: 2002;
+  background: none;
+  pointer-events: none; 
+  
+
+    @media (min-width: 768px) {
+    display: none;
+    }
+`
+
 const TitleContainer = styled.div`
-  // Add frontend Dev text on top of screen
+  display: none;
 
   @media (min-width: 768px) {
     display: flex;
@@ -147,45 +172,45 @@ const TitleContainer = styled.div`
     bottom: 0;
     margin: 0px;
     z-index: 101;
-     pointer-events: none;
+    pointer-events: none;
   }
   
 `;
 
 const TopTitle = styled.span`
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  font-size: 18px;
-  font-weight: 800;
-  text-decoration: none;
-  text-transform: uppercase;
-   background: linear-gradient(to bottom, #FFF4B8, #FFC7D3, #F9A8FF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+  font-size: 28px;
   margin: 2px;
 
-    @media (min-width: 768px) {
+  @media (min-width: 768px) {
      font-size: clamp(14px, 4vw, 72px); 
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+    background: linear-gradient(to bottom, #FFF4B8, #FFC7D3, #F9A8FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
   }
 `;
 
 const BottomTitle = styled.span`
-  font-size: 18px;
-  font-weight: 800;
-  text-decoration: none;
-  text-transform: uppercase;
-  background: linear-gradient(to right, #FFF4B8, #FFC7D3, #F9A8FF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-  margin: 2px;
+    font-size: 28px;
+  //   font-weight: 800;
+  //   text-decoration: none;
+  //   text-transform: uppercase;
+  //  background: linear-gradient(to right, #FFF4B8, #FFC7D3, #F9A8FF);
+  //   -webkit-background-clip: text;
+  //   -webkit-text-fill-color: transparent;
+  //   background-clip: text;
+  //   color: transparent;
+
 
   @media (min-width: 768px) {
     font-size: clamp(14px, 4vw, 72px); 
     margin-left: 20px;
+   
+   
   }
 `;
 const NavIconButton = styled.a`
@@ -238,7 +263,10 @@ export const Nav = () => {
 
   return (
     <>
-
+      {/* <TitleMobile>
+        <h1> <TopTitle> Sofie Johansson</TopTitle><br />
+          <BottomTitle>Frontend Developer</BottomTitle></h1>
+      </TitleMobile> */}
       <HamburgerButton onClick={() => setMenuOpen((open) => !open)}>
         {menuOpen ? "✕" : "+"}
       </HamburgerButton>
@@ -308,13 +336,13 @@ export const Nav = () => {
             title="About me"
             active={location.pathname === "/about" ? "true" : undefined}
           >
-            About
+            About.
           </NavItem>
-          <NavItem href="/projects" title="See projects" active={location.pathname === "/projects" ? "true" : undefined}>Projects</NavItem>
+          <NavItem href="/projects" title="See projects" active={location.pathname === "/projects" ? "true" : undefined}>Projects.</NavItem>
         </NavRow>
         <NavColumn>
-          <NavItem href="/skills" title="My skills" vertical="true" active={location.pathname === "/skills" ? "true" : undefined}>Skills</NavItem>
-          <NavItem href="/contact" title="Get in touch" vertical="true" active={location.pathname === "/contact" ? "true" : undefined}>Contact</NavItem>
+          <NavItem href="/skills" title="My skills" vertical="true" active={location.pathname === "/skills" ? "true" : undefined}>Skills.</NavItem>
+          <NavItem href="/contact" title="Get in touch" vertical="true" active={location.pathname === "/contact" ? "true" : undefined}>Contact.</NavItem>
           <NavIconButton
             href="https://www.linkedin.com/in/ssofiejohansson"
             target="_blank"
@@ -325,8 +353,8 @@ export const Nav = () => {
           </NavIconButton>
         </NavColumn>
         <TitleContainer>
-          <TopTitle>Frontend</TopTitle>
-          <BottomTitle>Developer</BottomTitle>
+          <h1> <TopTitle>Sofie Johansson</TopTitle>
+            <BottomTitle>Frontend Developer</BottomTitle></h1>
         </TitleContainer>
       </NavContainer>
     </>

@@ -20,7 +20,7 @@ export const HeaderText = styled.div`
   justify-content: center;
   gap: 12px;
   width: 100%;
-  padding: 20px;
+  padding: 40px 20px;
   height: 100dvh;
 
   @media (min-width: 768px) {
@@ -34,9 +34,11 @@ export const Title = styled.h2`
 font-size: 30px;
 font-style: italic;
 max-width: 100%;
+text-align: left;
 
 @media (min-width: 768px) {
 max-width: 70%;
+text-align: center;
 }
 `
 
