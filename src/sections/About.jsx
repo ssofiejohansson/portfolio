@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import { Icons } from './components/Icons';
-import { Bio, HeaderText, Title } from "./Header"
+import { Bio, HeaderText, Heading } from "./Header"
 
 const AboutContainer = styled.div`
   display: flex;
@@ -53,7 +53,7 @@ export const About = () => {
   return (
     <AboutContainer>
       <HeaderText>
-        <Title>A little about me</Title>
+        <Heading>A little about me</Heading>
         <Bio>
           <p> A creative frontend developer with a background in hospitality and a thing for clean, pretty and user-friendly web experiences. After 10+ years of working with people and fast-paced teams, I'm diving into this new chapter all about code, creativity and continuous learning.</p>
           <p>I also hold a Higher Education Diploma in Informatics, where I explored everything from UX and web design to backend fundamentals like databases and CMS platforms. Along the way, I’ve built responsive WordPress sites, collaborated with designers and fully embraced my obsession with CSS (yes, still love it). </p>
@@ -61,9 +61,9 @@ export const About = () => {
 
       </HeaderText>
       <FactsContainer>
-        <Title>
+        <Heading>
           6 super random facts
-        </Title>
+        </Heading>
         <FactList>
           <ListItem>🏓 I don’t mean to brag, but I'm really good at table tennis.</ListItem>
           <ListItem>🎶 Over 450 concerts attended and still counting.</ListItem>

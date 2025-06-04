@@ -1,37 +1,18 @@
 import styled from 'styled-components';
 
 import profileImage from '../assets/img/footer-img.png';
-import { ButtonBase } from './components/Button'
 import { Icons } from './components/Icons';
-import { ProfileImg, Title } from './Header';
+import { HeaderText, Heading, ProfileImg } from './Header';
 
 const FooterContainer = styled.footer`
   display: flex;
   flex-direction: column-reverse;
-
- 
 
   @media (min-width: 768px) {
     flex-direction: row;
     height: 100vh;
   }
 `
-
-const FooterBio = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 12px;
-  width: 100%;
-  padding: 20px;
-
-  @media (min-width: 768px) {
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-  }
-  `
 
 const FooterImg = styled.div`
   width: 100%;
@@ -42,18 +23,30 @@ const FooterImg = styled.div`
   }
 `
 
+const SubHeading = styled.p`
+font-size: 20px;
+letter-spacing: 1px;
+max-width: 90%;
+text-align: left;
+
+@media (min-width: 768px) {
+max-width: 70%;
+text-align: center;
+}
+`
+
 export const Footer = () => {
   return (
 
     <FooterContainer>
 
-      <FooterBio>
-        <Title>Let’s talk frontend, creative chaos or just play table tennis.</Title>
+      <HeaderText>
+        <Heading>So let’s talk frontend, creative chaos or.. just play table tennis?</Heading>
 
-        <p>+46(0)72 442 34 97</p>
-        <p>ssofiejohansson@gmail.com</p>
+        <SubHeading>072 442 34 97</SubHeading>
+        <SubHeading>ssofiejohansson@gmail.com</SubHeading>
         <Icons />
-      </FooterBio>
+      </HeaderText>
       <FooterImg>
         <ProfileImg src={profileImage} alt="Sofie Johansson" />
       </FooterImg>

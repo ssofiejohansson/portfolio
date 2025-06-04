@@ -5,9 +5,13 @@ import styled from "styled-components";
 
 export const IconContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
+
+  @media (min-width: 768px) {
+    justify-content: center;
+  }
 
 `;
 
@@ -15,7 +19,7 @@ const Icon = styled.a`
    display: flex;
   justify-content: center;
   align-items: center;
-    width: 44px;
+  width: 44px;
   height: 44px;
   border-radius: 50%;
   background: var(--primary);

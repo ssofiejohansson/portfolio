@@ -30,8 +30,8 @@ const HamburgerButton = styled.button`
   align-items: center;
   justify-content: center;
   position: fixed;
-  top: 8px;
-  right: 12px;
+  top: 6px;
+  right: 8px;
   z-index: 2001;
   background: none;
   border: none;
@@ -238,9 +238,6 @@ const VerticalIcon = styled(FontAwesomeIcon)`
   color: var(--primary);
   transform: none;
   padding: 2px;
-
-  &:hover {
-     }
 
       @media (min-width: 768px) {
         transform: rotate(90deg);

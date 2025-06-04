@@ -18,7 +18,7 @@ export const HeaderText = styled.div`
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  gap: 12px;
+  gap: 28px;
   width: 100%;
   padding: 40px 20px;
   height: 100dvh;
@@ -27,10 +27,11 @@ export const HeaderText = styled.div`
     align-items: center;
     justify-content: center;
     width: 50%;
+    gap: 22px;
     
   }
 `
-export const Title = styled.h2`
+export const Heading = styled.h2`
 font-size: 30px;
 font-style: italic;
 max-width: 90%;
@@ -46,7 +47,7 @@ export const Bio = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 12px;
+  gap: 22px;
 
    @media (min-width: 768px) {
     width: 70%;
@@ -89,7 +90,7 @@ export const Header = () => {
 
       <HeaderText>
 
-        <Title>Is this a good time? Yes? Great.</Title>
+        <Heading>Is this a good time? Yes? Great.</Heading>
         <Bio>
           <p>I'm Sofie, a frontend developer with a love for colors, clean code and CSS (yes, really). For the past decade I’ve worked in hospitality, lived in 10 different cities and soaked up all I could from life, cultures and people. But I’ve always been curious about tech and I finally decided to stop dreaming about it and just go for it.
           </p><p>

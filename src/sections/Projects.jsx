@@ -7,8 +7,7 @@ const ProjectsContainer = styled.section`
   flex-wrap: wrap;
   row-gap: 30px; 
   justify-content: center;
-  padding: 30px 10px;
-  
+  padding: 30px 10px;  
 
   @media (min-width: 768px) {
     position: fixed;
@@ -20,11 +19,7 @@ const ProjectsContainer = styled.section`
     padding: 30px;
     z-index: 10;
   }
-
-
 `;
-
-
 
 export const Projects = () => {
   return (
