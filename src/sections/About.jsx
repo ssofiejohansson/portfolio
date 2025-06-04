@@ -17,10 +17,11 @@ const FactsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: left;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 12px;
   width: 100%;
-  padding: 40px; 
+  height: 100dvh;
+  padding: 20px; 
   background: linear-gradient(to right, #FFF4B8, #FFC7D3, #F9A8FF);  
   background-size: cover;
   background-repeat: no-repeat;
@@ -29,7 +30,6 @@ const FactsContainer = styled.div`
   @media (min-width: 768px) {
     width: 50%;
     align-items: center;
-    justify-content: center;
     padding: 30px; 
   }
 `

@@ -17,18 +17,17 @@ export const HeaderText = styled.div`
   display: flex;
   flex-direction: column;
   align-items: left;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 12px;
   width: 100%;
   padding: 20px;
-  margin-top: 50px;
   height: 100dvh;
 
   @media (min-width: 768px) {
     align-items: center;
     justify-content: center;
     width: 50%;
-    margin-top: 0px;
+    
   }
 `
 export const Title = styled.h2`

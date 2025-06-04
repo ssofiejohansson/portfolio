@@ -29,7 +29,6 @@ const FooterBio = styled.div`
   gap: 12px;
   width: 100%;
   padding: 20px;
-  margin-top: 50px;
 
   @media (min-width: 768px) {
     width: 50%;
@@ -58,7 +57,7 @@ export const Footer = () => {
         <Title>Let's Talk!</Title>
         <p>+46(0)72 442 34 97</p>
         <p>ssofiejohansson@gmail.com</p>
-
+        <Icons />
       </FooterBio>
       <FooterImg>
         <ProfileImg src={profileImage} alt="Sofie Johansson" />

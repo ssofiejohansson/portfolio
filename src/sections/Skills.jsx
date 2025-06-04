@@ -19,12 +19,11 @@ const SkillsList = styled.div`
   justify-content: center;
   gap: 30px;
   padding: 40px;
-  margin-top: 50px;
+  min-height: 100dvh;
 
   @media (min-width: 768px) {
   align-items: center;
   width: 50%;
-  margin-top: 0;
   }
 `
 
@@ -36,7 +35,6 @@ const SkillsRow = styled.div`
 
   @media (min-width: 768px) {
     gap: 12px;
-
     }
 `
 
@@ -51,11 +49,12 @@ const TechStack = styled.div`
   justify-content: center;
   align-items: center;
   gap: 12px;
-  padding: 40px;
+  padding: 20px;
   background: linear-gradient(to right, #FFF4B8, #FFC7D3, #F9A8FF);  
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  height: 100dvh;
 
   @media (min-width: 768px) {
   width: 50%;
