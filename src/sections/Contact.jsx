@@ -14,7 +14,6 @@ const FooterContainer = styled.footer`
   @media (min-width: 768px) {
     flex-direction: row;
     height: 100vh;
-   
   }
 `
 
@@ -26,13 +25,11 @@ const FooterBio = styled.div`
   gap: 12px;
   width: 100%;
   padding: 20px;
-  margin-top: 50px;
 
   @media (min-width: 768px) {
     width: 50%;
     align-items: center;
-  justify-content: center;
-   margin-top: 0px;
+    justify-content: center;
   }
   `
 
