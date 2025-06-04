@@ -3,7 +3,7 @@
     {
       "name": "Still not done",
       "info": "Still Not Done is a to-do app built with React that helps users manage their tasks with ease. It uses Zustand for state management and styled-components for styling, offering a smooth and responsive user experience. Users can add new tasks, mark them as complete, delete them and reorder them in the list. Completed tasks appear in a separate section to keep things organized. The app also uses localStorage so the task list is saved between sessions and remains available even after the browser is closed.",
-      "image": "./img/todo.png",
+      "image": "./img/todo.webp",
       "alt": "To-do App",
       "collab": "Solo project",
       "tags": [
@@ -33,7 +33,7 @@
       "github": "https://github.com/ssofiejohansson/js-project-happy-thoughts"
     },
     {
-      "name": "Weather app",
+      "name": "Heather Weather",
       "info": "A sleek weather application built with TypeScript, designed to deliver real-time weather updates and a 4-day forecast. It fetches data from the OpenWeather API and presents it through a clean, animated user interface. The app adapts seamlessly to all screen sizes and includes smooth CSS animations that enhance the overall experience without distraction.",
       "image": "./img/heatherweather.webp",
       "alt": "Weather App",
@@ -47,9 +47,9 @@
       "github": "https://github.com/ssofiejohansson/js-project-weather-app"
     },
     {
-      "name": "Movie App",
+      "name": "Movie Library",
       "info": "The Movie App is an app listing movies built with React that lets users browse popular films and discover new releases. It uses React Router for seamless navigation between pages and styled-components for custom styling. Users can click on any movie to view more details, including the release date, synopsis and additional information. Loading states are handled smoothly to enhance the user experience while data is being fetched.",
-      "image": "./img/.webp",
+      "image": "./img/movie.webp",
       "alt": "Movie App",
       "collab": "Team project",
       "tags": [
