@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 import { Cards } from "./components/Cards";
 
-
 const ProjectsContainer = styled.section`
   display: flex;
   flex-wrap: wrap;
@@ -13,10 +12,10 @@ const ProjectsContainer = styled.section`
 
   @media (min-width: 768px) {
     position: fixed;
-    top: 80px;
-    left: 80px;
-    bottom: 80px;
-    right: 80px;
+    top: 90px;
+    left: 90px;
+    bottom: 90px;
+    right: 90px;
     overflow-y: auto;
     padding: 30px;
     z-index: 10;

@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import styled from "styled-components"
 
-
 import { Icons } from "./components/Icons"
 
 const NavContainer = styled.nav`
@@ -191,21 +190,11 @@ const TopTitle = styled.span`
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-
   }
 `;
 
 const BottomTitle = styled.span`
     font-size: 28px;
-  //   font-weight: 800;
-  //   text-decoration: none;
-  //   text-transform: uppercase;
-  //  background: linear-gradient(to right, #FFF4B8, #FFC7D3, #F9A8FF);
-  //   -webkit-background-clip: text;
-  //   -webkit-text-fill-color: transparent;
-  //   background-clip: text;
-  //   color: transparent;
-
 
   @media (min-width: 768px) {
     font-size: clamp(14px, 4vw, 72px); 

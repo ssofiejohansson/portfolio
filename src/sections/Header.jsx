@@ -5,7 +5,7 @@ import { Icons } from './components/Icons';
 
 export const HeaderContainer = styled.header`
   display: flex;
-  flex-direction: column; 
+  flex-direction: column-reverse; 
 
   @media (min-width: 768px) {
     flex-direction: row;

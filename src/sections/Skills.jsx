@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const SkillsContainer = styled.section`
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -15,8 +15,8 @@ const SkillsList = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 30px;
-  padding: 40px;
+  gap: 40px;
+  padding: 20px;
   min-height: 100dvh;
 
   @media (min-width: 768px) {
@@ -33,7 +33,7 @@ const SkillsRow = styled.div`
 
   @media (min-width: 768px) {
     gap: 12px;
-      align-items: flex-start;
+  
 
     }
 `
@@ -130,22 +130,26 @@ export const Skills = () => {
       <TechStack>
         <h2>Tech stack</h2>
         <ListRow>
+          <li>JavaScript</li>
+          <li>React</li>
           <li>HTML5</li>
           <li>CSS3</li>
-          <li>JavaScript</li>
           <li>TypeScript</li>
-          <li>React</li>
           <li>React Native</li>
           <li>Zustand</li>
           <li>Vue</li>
           <li>Angular</li>
+          <li>Bootstrap</li>
           <li>Node.js</li>
           <li>JSON</li>
           <li>SQL</li>
           <li>MongoDB</li>
           <li>APIs</li>
           <li>npm</li>
+          <li>PHP</li>
           <li>CMS</li>
+          <li>WordPress</li>
+          <li>Figma</li>
           <li>Postman</li>
 
         </ListRow>

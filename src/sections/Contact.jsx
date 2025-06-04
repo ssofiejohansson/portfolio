@@ -7,8 +7,8 @@ import { ProfileImg, Title } from './Header';
 
 const FooterContainer = styled.footer`
   display: flex;
-  flex-direction: column;
-  min-height: 100dvh;
+  flex-direction: column-reverse;
+
  
 
   @media (min-width: 768px) {

@@ -5,7 +5,7 @@ import { Bio, HeaderText, Title } from "./Header"
 
 const AboutContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 
   @media (min-width: 768px) {
     flex-direction: row;
