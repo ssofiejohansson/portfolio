@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+import { ButtonBase } from "./components/Button"
 import { Cards } from "./components/Cards";
 
 const ProjectsContainer = styled.section`
@@ -17,8 +18,9 @@ const ProjectsContainer = styled.section`
 
 export const Projects = () => {
   return (
-    <ProjectsContainer>
+    <ProjectsContainer id="top">
       <Cards />
+      <ButtonBase href="#top" title="Back to top">↑</ButtonBase>
     </ProjectsContainer>
   );
 };

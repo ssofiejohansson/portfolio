@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ButtonBase = styled.a`
+export const ButtonBase = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,6 +19,7 @@ const ButtonBase = styled.a`
     &:hover {
         background: var(--secondary);
         color: var(--primary);
+         text-decoration: none;
     }
 `;
 

@@ -22,6 +22,7 @@ export const HeaderText = styled.div`
   width: 100%;
   padding: 20px;
   margin-top: 50px;
+  min-height: 100dvh;
 
   @media (min-width: 768px) {
     align-items: center;
@@ -53,6 +54,7 @@ export const Bio = styled.div`
 
 export const HeaderImg = styled.div`
   width: 100%;
+  min-height: 100dvh;
 
   @media (min-width: 768px) {
     width: 50%;
@@ -66,7 +68,7 @@ export const ProfileImg = styled.img`
   margin: 0 auto;
   object-fit: cover;
   object-position: center center;
-  max-height: 400px;
+  
 
   @media (min-width: 768px) {
   display: block;
@@ -75,7 +77,7 @@ export const ProfileImg = styled.img`
   object-fit: cover;
   object-position: center center;
   margin: 0 auto;
-  max-height: 100%;
+
   }
 `
 
