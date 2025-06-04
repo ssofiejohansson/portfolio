@@ -11,15 +11,10 @@ const FooterContainer = styled.footer`
   min-height: 100dvh;
  
 
-  @media (max-width: 767px) {
-    background: url(${profileImage}) center/cover no-repeat;
-    position: relative;
-  }
-
   @media (min-width: 768px) {
     flex-direction: row;
     height: 100vh;
-    background: none;
+   
   }
 `
 
@@ -44,9 +39,6 @@ const FooterBio = styled.div`
 const FooterImg = styled.div`
   width: 100%;
 
-  @media (max-width: 767px) {
-    display: none;
-  }
   @media (min-width: 768px) {
     width: 50%;
     display: block;

@@ -33,7 +33,7 @@ export const HeaderText = styled.div`
 export const Title = styled.h2`
 font-size: 30px;
 font-style: italic;
-max-width: 100%;
+max-width: 80%;
 text-align: left;
 
 @media (min-width: 768px) {
