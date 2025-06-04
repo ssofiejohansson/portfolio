@@ -2,28 +2,68 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useLocation } from "react-router-dom";
 import styled from "styled-components"
+import { useState } from "react";
+import { Icons } from "./components/Icons"
 
 const NavContainer = styled.nav`
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  display: flex;
-  gap: 10px;
-  justify-content: flex-start;
-  padding: 10px;
+  display: none;
 
   @media (min-width: 768px) {
-    background: none;
+    display: flex;
     flex-direction: column;
-    width: 80px;
-    left: auto;
+    gap: 10px;
+    justify-content: flex-start;    
     align-items: flex-end;
-    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;   
+    left: auto;
+    width: 100%;
+    z-index: 100;
+    padding: 10px;
   }
 `
+const HamburgerButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 8px;
+  right: 12px;
+  z-index: 2001;
+  background: none;
+  border: none;
+  font-size: 66px;
+  color: var(--primary);
+  cursor: pointer;
+  transition: transform 0.2s;
+
+  &:active {
+    transform: scale(1.15) rotate(20deg);
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+const MobileMenuOverlay = styled.div`  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(to right, #FFF4B8, #FFC7D3, #F9A8FF);  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 2000;
+
+  transition: opacity 0.3s;
+  opacity: ${({ open }) => (open ? 1 : 0)};
+  pointer-events: ${({ open }) => (open ? "auto" : "none")};
+`;
 
 const NavRow = styled.div`
   display: flex;
@@ -96,7 +136,7 @@ const NavItem = styled.a`
 `
 
 const TitleContainer = styled.div`
-  display: none;
+  // Add frontend Dev text on top of screen
 
   @media (min-width: 768px) {
     display: flex;
@@ -194,43 +234,101 @@ const VerticalIcon = styled(FontAwesomeIcon)`
 
 export const Nav = () => {
   const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <NavContainer>
-      <NavRow>
-        {location.pathname !== "/" && (
+    <>
+
+      <HamburgerButton onClick={() => setMenuOpen((open) => !open)}>
+        {menuOpen ? "✕" : "+"}
+      </HamburgerButton>
+
+      <MobileMenuOverlay open={menuOpen}>
+        <NavRow style={{ flexDirection: "column", gap: "32px" }}>
           <NavItem
             href="/"
             title="Back to Home"
             active={location.pathname === "/" ? "true" : undefined}
+            onClick={() => setMenuOpen(false)}
           >
-            ←
+            Home
           </NavItem>
-        )}
-        <NavItem
-          href="/about"
-          title="About me"
-          active={location.pathname === "/about" ? "true" : undefined}
-        >
-          About
-        </NavItem>
-        <NavItem href="/projects" title="See projects" active={location.pathname === "/projects" ? "true" : undefined}>Projects</NavItem>
-      </NavRow>
-      <NavColumn>
-        <NavItem href="/skills" title="My skills" vertical="true" active={location.pathname === "/skills" ? "true" : undefined}>Skills</NavItem>
-        <NavItem href="/contact" title="Get in touch" vertical="true" active={location.pathname === "/contact" ? "true" : undefined}>Contact</NavItem>
-        <NavIconButton
-          href="https://www.linkedin.com/in/ssofiejohansson"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Visit my LinkedIn profile"
-        >
-          <VerticalIcon icon={faLinkedinIn} />
-        </NavIconButton>
-      </NavColumn>
-      <TitleContainer>
-        <TopTitle>Frontend</TopTitle>
-        <BottomTitle>Developer</BottomTitle>
-      </TitleContainer>
-    </NavContainer>
+          <NavItem
+            href="/about"
+            title="About me"
+            active={location.pathname === "/about" ? "true" : undefined}
+            onClick={() => setMenuOpen(false)}
+          >
+            About
+          </NavItem>
+          <NavItem
+            href="/projects"
+            title="See projects"
+            active={location.pathname === "/projects" ? "true" : undefined}
+            onClick={() => setMenuOpen(false)}
+          >
+            Projects
+          </NavItem>
+          <NavItem
+            href="/skills"
+            title="My skills"
+            vertical="true"
+            active={location.pathname === "/skills" ? "true" : undefined}
+            onClick={() => setMenuOpen(false)}
+          >
+            Skills
+          </NavItem>
+          <NavItem
+            href="/contact"
+            title="Get in touch"
+            vertical="true"
+            active={location.pathname === "/contact" ? "true" : undefined}
+            onClick={() => setMenuOpen(false)}
+          >
+            Contact
+          </NavItem>
+          <Icons />
+
+        </NavRow>
+      </MobileMenuOverlay>
+
+      <NavContainer>
+        <NavRow>
+          {location.pathname !== "/" && (
+            <NavItem
+              href="/"
+              title="Back to Home"
+              active={location.pathname === "/" ? "true" : undefined}
+            >
+              ←
+            </NavItem>
+          )}
+          <NavItem
+            href="/about"
+            title="About me"
+            active={location.pathname === "/about" ? "true" : undefined}
+          >
+            About
+          </NavItem>
+          <NavItem href="/projects" title="See projects" active={location.pathname === "/projects" ? "true" : undefined}>Projects</NavItem>
+        </NavRow>
+        <NavColumn>
+          <NavItem href="/skills" title="My skills" vertical="true" active={location.pathname === "/skills" ? "true" : undefined}>Skills</NavItem>
+          <NavItem href="/contact" title="Get in touch" vertical="true" active={location.pathname === "/contact" ? "true" : undefined}>Contact</NavItem>
+          <NavIconButton
+            href="https://www.linkedin.com/in/ssofiejohansson"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Visit my LinkedIn profile"
+          >
+            <VerticalIcon icon={faLinkedinIn} />
+          </NavIconButton>
+        </NavColumn>
+        <TitleContainer>
+          <TopTitle>Frontend</TopTitle>
+          <BottomTitle>Developer</BottomTitle>
+        </TitleContainer>
+      </NavContainer>
+    </>
   )
 }
