@@ -142,23 +142,22 @@ const NavItem = styled.a`
   }
 `
 
-const TitleMobile = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  position: fixed;
-  padding: 5px;
-  width: 100vw;
-  z-index: 2002;
-  background: none;
-  pointer-events: none; 
-  
+// const TitleMobile = styled.div`
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   justify-content: flex-start;
+//   position: fixed;
+//   padding: 5px;
+//   width: 100vw;
+//   z-index: 2002;
+//   background: none;
+//   pointer-events: none; 
 
-    @media (min-width: 768px) {
-    display: none;
-    }
-`
+//     @media (min-width: 768px) {
+//     display: none;
+//     }
+// `
 
 const TitleContainer = styled.div`
   display: none;
@@ -174,7 +173,6 @@ const TitleContainer = styled.div`
     z-index: 101;
     pointer-events: none;
   }
-  
 `;
 
 const TopTitle = styled.span`
@@ -182,9 +180,9 @@ const TopTitle = styled.span`
   margin: 2px;
 
   @media (min-width: 768px) {
-     font-size: clamp(14px, 4vw, 72px); 
-      writing-mode: vertical-rl;
-      text-orientation: mixed;
+    font-size: clamp(14px, 4vw, 72px); 
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
     background: linear-gradient(to bottom, #FFF4B8, #FFC7D3, #F9A8FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -194,13 +192,11 @@ const TopTitle = styled.span`
 `;
 
 const BottomTitle = styled.span`
-    font-size: 28px;
+  font-size: 28px;
 
   @media (min-width: 768px) {
     font-size: clamp(14px, 4vw, 72px); 
-    margin-left: 20px;
-   
-   
+    margin-left: 20px; 
   }
 `;
 const NavIconButton = styled.a`
