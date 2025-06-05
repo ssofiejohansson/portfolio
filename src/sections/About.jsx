@@ -56,7 +56,7 @@ export const About = () => {
         <Bio>
           <p> A creative frontend developer with a background in hospitality and a thing for clean, pretty and user-friendly web experiences. After 10+ years of working with people and fast-paced teams, I'm diving into this new chapter all about code, creativity and continuous learning.</p>
           <p>I also hold a Higher Education Diploma in Informatics, where I explored everything from UX and web design to backend fundamentals like databases and CMS platforms. Along the way, I've built responsive WordPress sites, collaborated with designers and fully embraced my obsession with CSS (yes, still love it). </p>
-          <p>When I'm not in front of my computer, you'll find me hunting for second-hand treasures, attempting (and mostly failing) to master crochet, or rediscovering Stockholm with fresh eyes after a decade away.</p>
+          <p>When I'm not in front of my computer, you'll find me hunting for second-hand treasures, attempting (and mostly failing) to master crochet or rediscovering Stockholm with fresh eyes after a decade away.</p>
         </Bio>
 
       </HeaderText>
