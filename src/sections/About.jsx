@@ -35,7 +35,6 @@ const FactsContainer = styled.div`
 `
 
 const FactList = styled.ul` 
-
   list-style: none;
   padding: 0;
   max-width: 100%;
@@ -56,7 +55,8 @@ export const About = () => {
         <Heading>A little about me</Heading>
         <Bio>
           <p> A creative frontend developer with a background in hospitality and a thing for clean, pretty and user-friendly web experiences. After 10+ years of working with people and fast-paced teams, I'm diving into this new chapter all about code, creativity and continuous learning.</p>
-          <p>I also hold a Higher Education Diploma in Informatics, where I explored everything from UX and web design to backend fundamentals like databases and CMS platforms. Along the way, I’ve built responsive WordPress sites, collaborated with designers and fully embraced my obsession with CSS (yes, still love it). </p>
+          <p>I also hold a Higher Education Diploma in Informatics, where I explored everything from UX and web design to backend fundamentals like databases and CMS platforms. Along the way, I've built responsive WordPress sites, collaborated with designers and fully embraced my obsession with CSS (yes, still love it). </p>
+          <p>When I'm not in front of my computer, you'll find me hunting for second-hand treasures, attempting (and mostly failing) to master crochet, or rediscovering Stockholm with fresh eyes after a decade away.</p>
         </Bio>
 
       </HeaderText>
@@ -65,10 +65,10 @@ export const About = () => {
           6 super random facts
         </Heading>
         <FactList>
-          <ListItem>🏓 I don’t mean to brag, but I'm really good at table tennis.</ListItem>
+          <ListItem>🏓 I don't mean to brag, but I'm really good at table tennis.</ListItem>
           <ListItem>🎶 Over 450 concerts attended and still counting.</ListItem>
           <ListItem>🌍 Lived in 10 cities across 4 countries in the last decade.</ListItem>
-          <ListItem>🚲 Can’t ride a bike, but I’m great at falling down gracefully.</ListItem>
+          <ListItem>🚲 Can't ride a bike, but I'm great at falling down gracefully.</ListItem>
           <ListItem>🍷 I choose wine by its label. The brighter, the better.</ListItem>
           <ListItem>📚 Currently on a mission to read 52 books this year.</ListItem>
         </FactList>

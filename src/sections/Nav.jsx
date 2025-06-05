@@ -144,19 +144,29 @@ const NavItem = styled.a`
 
 // const TitleMobile = styled.div`
 //   display: flex;
-//   flex-direction: row;
-//   align-items: center;
-//   justify-content: flex-start;
-//   position: fixed;
-//   padding: 5px;
-//   width: 100vw;
-//   z-index: 2002;
-//   background: none;
-//   pointer-events: none; 
 
-//     @media (min-width: 768px) {
+//   align-items: center;
+//   justify-content: center;
+//   padding: 5px;
+//   z-index: 2002;
+//   background: none;        
+//   pointer-events: none; 
+//   color: var(--primary); 
+
+//   h1 {
+//     color: var(--primary);
+//     background: none;
+//     -webkit-background-clip: unset;
+//     -webkit-text-fill-color: unset;
+//     background-clip: unset;
+//     font-size: 1.5rem;
+//     font-weight: 800;
+//     margin: 0;
+//   }
+
+//   @media (min-width: 768px) {
 //     display: none;
-//     }
+//   }
 // `
 
 const TitleContainer = styled.div`
@@ -199,6 +209,7 @@ const BottomTitle = styled.span`
     margin-left: 20px; 
   }
 `;
+
 const NavIconButton = styled.a`
   display: flex;
   justify-content: center;
@@ -246,15 +257,15 @@ export const Nav = () => {
 
   return (
     <>
-      {/* <TitleMobile>
-        <h1> <TopTitle> Sofie Johansson</TopTitle><br />
-          <BottomTitle>Frontend Developer</BottomTitle></h1>
-      </TitleMobile> */}
+
       <HamburgerButton onClick={() => setMenuOpen((open) => !open)}>
         {menuOpen ? "✕" : "+"}
       </HamburgerButton>
 
       <MobileMenuOverlay open={menuOpen}>
+        {/* <TitleMobile>
+          <h1> Sofie Johansson Frontend Developer</h1>
+        </TitleMobile> */}
         <NavRow style={{ flexDirection: "column", gap: "32px" }}>
           <NavItem
             href="/"
