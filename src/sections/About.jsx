@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-import { Icons } from './components/Icons';
 import { Bio, HeaderText, Heading } from "./Header"
 
 const AboutContainer = styled.div`

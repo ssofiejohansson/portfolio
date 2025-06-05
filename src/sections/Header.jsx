@@ -50,7 +50,8 @@ export const Bio = styled.div`
   gap: 22px;
 
    @media (min-width: 768px) {
-    width: 70%;
+    max-width: 80%;
+
   }
 `
 
