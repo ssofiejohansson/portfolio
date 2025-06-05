@@ -29,12 +29,10 @@ const SkillsRow = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  gap: 16px;
 
   @media (min-width: 768px) {
     gap: 12px;
-  
-
     }
 `
 
@@ -70,7 +68,7 @@ const ListRow = styled.ul`
 
   @media (min-width: 768px) {
   padding: 0px 40px;
-  max-width: 400px;
+  max-width: 500px;
   }
 `
 
@@ -89,16 +87,18 @@ export const Skills = () => {
             <li>State management</li>
             <li>Debugging</li>
             <li>Performance optimization</li>
+            <li>Component-based architecture</li>
             <li>Client-side routing</li>
           </ListColumn>
 
-          <h3>Design & UX</h3>
+          <h3>Design</h3>
           <ListColumn>
-            <li>UI design</li>
-            <li>UX thinking</li>
+            <li>User Experience</li>
+            <li>Visual design</li>
+            <li>Graphic design</li>
+            <li>SEO</li>
             <li>Prototyping in Figma</li>
             <li>Accessibility testing tools</li>
-            <li>Mobile-first design</li>
             <li>Wireframing</li>
 
           </ListColumn>
@@ -117,12 +117,13 @@ export const Skills = () => {
 
           <h3>Soft Skills</h3>
           <ListColumn>
-            <li>Detail-oriented</li>
-            <li>Communicative</li>
-            <li>Adaptable</li>
-            <li>Solution-oriented</li>
-            <li>Team player</li>
-
+            <li>Problem-solving mindset</li>
+            <li>Effective communication</li>
+            <li>Attention to detail</li>
+            <li>Team collaboration</li>
+            <li>Time management</li>
+            <li>Growth-oriented</li>
+            <li>User-centric thinking</li>
           </ListColumn>
         </SkillsRow>
       </SkillsList>
@@ -130,27 +131,29 @@ export const Skills = () => {
       <TechStack>
         <h2>Tech stack</h2>
         <ListRow>
+
           <li>JavaScript</li>
-          <li>React</li>
+          <li>TypeScript</li>
           <li>HTML5</li>
           <li>CSS3</li>
-          <li>TypeScript</li>
-          <li>React Native</li>
-          <li>Zustand</li>
+          <li>JSON</li>
+          <li>PHP</li>
+          <li>SQL</li>
+          <li>React</li>
           <li>Vue</li>
           <li>Angular</li>
+          <li>React Native</li>
+          <li>Zustand</li>
           <li>Bootstrap</li>
           <li>Node.js</li>
-          <li>JSON</li>
-          <li>SQL</li>
           <li>MongoDB</li>
-          <li>APIs</li>
+          <li>RESTful APIs</li>
           <li>npm</li>
-          <li>PHP</li>
-          <li>CMS</li>
-          <li>WordPress</li>
-          <li>Figma</li>
           <li>Postman</li>
+          <li>Figma</li>
+          <li>Git & GitHub</li>
+          <li>WordPress</li>
+          <li>CMS Platforms</li>
 
         </ListRow>
       </TechStack>

@@ -16,7 +16,7 @@ const CardContainer = styled.article`
   max-width: 450px;
   box-sizing: border-box;
   min-height: 200px; 
-    background-color: var(--secondary);
+  background-color: var(--secondary);
 
   @media (min-width: 768px) {
     flex: 1 1 calc(50% - 40px); 
@@ -26,8 +26,6 @@ const CardContainer = styled.article`
     flex: 1 1 calc(25% - 40px); 
   }
 `
-
-
 
 const Container = styled.div`
   display: flex;
