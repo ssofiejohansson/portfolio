@@ -17,7 +17,7 @@ const FactsContainer = styled.div`
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  gap: 12px;
+  gap: 18px;
   width: 100%;
   height: 100dvh;
   padding: 20px; 
@@ -29,7 +29,7 @@ const FactsContainer = styled.div`
   @media (min-width: 768px) {
     width: 50%;
     align-items: center;
-    padding: 30px; 
+   
   }
 `
 
@@ -51,17 +51,17 @@ export const About = () => {
   return (
     <AboutContainer>
       <HeaderText>
-        <Heading>A little about me</Heading>
+        <Heading>About me</Heading>
         <Bio>
-          <p> A creative frontend developer with a background in hospitality and a thing for clean, pretty and user-friendly web experiences. After 10+ years of working with people and fast-paced teams, I'm diving into this new chapter all about code, creativity and continuous learning.</p>
-          <p>I also hold a Higher Education Diploma in Informatics, where I explored everything from UX and web design to backend fundamentals like databases and CMS platforms. Along the way, I've built responsive WordPress sites, collaborated with designers and fully embraced my obsession with CSS (yes, still love it). </p>
-          <p>When I'm not in front of my computer, you'll find me hunting for second-hand treasures, attempting (and mostly failing) to master crochet or rediscovering Stockholm with fresh eyes after a decade away.</p>
+          <p> I am a creative frontend developer with a background in hospitality and a thing for clean, pretty and user-friendly web experiences. After 10+ years of working with people and fast-paced teams, I'm diving into this new chapter all about code, creativity and continuous learning.</p>
+          <p>I also hold a Higher Education Diploma in Informatics, where I explored everything from UX and web design to backend fundamentals like databases and CMS platforms. Along the way, I have built responsive WordPress sites, collaborated with designers and fully embraced my obsession with CSS (yes, still love it). </p>
+          <p>When I am not in front of my computer, you will find me hunting for second-hand treasures, attempting (and mostly failing) to master crochet or rediscovering Stockholm with fresh eyes after a decade away.</p>
         </Bio>
 
       </HeaderText>
       <FactsContainer>
         <Heading>
-          6 super random facts
+          6 random facts
         </Heading>
         <FactList>
           <ListItem>🏓 I don't mean to brag, but I'm really good at table tennis.</ListItem>

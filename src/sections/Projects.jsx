@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { Cards } from "./components/Cards";
 
 const ProjectsContainer = styled.section`
@@ -12,6 +13,7 @@ const ProjectsContainer = styled.section`
 
   @media (min-width: 768px) {
     flex-direction: row;  
+    align-items: flex-start;
     position: fixed;
     top: 90px;
     left: 90px;

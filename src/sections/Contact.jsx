@@ -41,9 +41,9 @@ export const Footer = () => {
     <FooterContainer>
 
       <HeaderText>
-        <Heading>So let’s talk frontend, creative chaos or.. just play table tennis?</Heading>
+        <Heading>So let’s talk frontend, creative chaos or... just play table tennis?</Heading>
 
-        <SubHeading>072 442 34 97</SubHeading>
+        <SubHeading>+46 72 442 34 97</SubHeading>
         <SubHeading>ssofiejohansson@gmail.com</SubHeading>
         <Icons />
       </HeaderText>

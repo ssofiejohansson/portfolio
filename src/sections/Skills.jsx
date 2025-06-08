@@ -15,7 +15,7 @@ const SkillsList = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
   padding: 20px;
   min-height: 100dvh;
 
@@ -93,14 +93,11 @@ export const Skills = () => {
 
           <h3>Design</h3>
           <ListColumn>
-            <li>User Experience</li>
-            <li>Visual design</li>
+            <li>UX/UI</li>
+            <li>Wireframing</li>
             <li>Graphic design</li>
-            <li>SEO</li>
             <li>Prototyping in Figma</li>
             <li>Accessibility testing tools</li>
-            <li>Wireframing</li>
-
           </ListColumn>
         </SkillsRow>
 
@@ -117,8 +114,6 @@ export const Skills = () => {
 
           <h3>Soft Skills</h3>
           <ListColumn>
-            <li>Problem-solving mindset</li>
-            <li>Effective communication</li>
             <li>Attention to detail</li>
             <li>Team collaboration</li>
             <li>Time management</li>
@@ -140,8 +135,6 @@ export const Skills = () => {
           <li>PHP</li>
           <li>SQL</li>
           <li>React</li>
-          <li>Vue</li>
-          <li>Angular</li>
           <li>React Native</li>
           <li>Zustand</li>
           <li>Bootstrap</li>

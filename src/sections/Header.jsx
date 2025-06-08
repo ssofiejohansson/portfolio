@@ -18,17 +18,14 @@ export const HeaderText = styled.div`
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  gap: 28px;
+  gap: 18px;
   width: 100%;
   padding: 40px 20px;
-  height: 100dvh;
 
   @media (min-width: 768px) {
     align-items: center;
     justify-content: center;
     width: 50%;
-    gap: 22px;
-    
   }
 `
 export const Heading = styled.h2`
@@ -57,7 +54,6 @@ export const Bio = styled.div`
 
 export const HeaderImg = styled.div`
   width: 100%;
-  height: 100dvh;
 
   @media (min-width: 768px) {
     width: 50%;
@@ -93,9 +89,9 @@ export const Header = () => {
 
         <Heading>Is this a good time? Yes? Great.</Heading>
         <Bio>
-          <p>I'm Sofie, a frontend developer with a love for colors, clean code and CSS (yes, really). For the past decade I’ve worked in hospitality, lived in 10 different cities and soaked up all I could from life, cultures and people. But I’ve always been curious about tech and I finally decided to stop dreaming about it and just go for it.
+          <p>I am Sofie, a frontend developer with a love for colors, clean code and CSS (yes, really). For the past decade I have worked in hospitality, lived in 10 different cities and soaked up all I could from life, cultures and people. But I have always been curious about tech and I finally decided to stop dreaming about it and just go for it.
           </p><p>
-            So now I’m deep into JavaScript, React and building very cool things at <a href='https://www.technigo.io/'>Technigo</a> — and honestly, I’m loving it. I’m looking for a frontend role where I can keep growing, build more cool stuff and bring some positive energy to a team. </p>
+            So now I am deep into JavaScript, React and building very cool things at <a href='https://www.technigo.io/'>Technigo</a> — and honestly, I am loving it. Currently looking for a frontend role where I can keep growing, build more cool stuff and bring some positive energy to a team. </p>
         </Bio>
         <Icons color="var(--primary)" />
       </HeaderText>

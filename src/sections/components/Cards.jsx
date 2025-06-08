@@ -29,6 +29,7 @@ const CardContainer = styled.article`
 
 const Container = styled.div`
   display: flex;
+  flex-direction: row;
   `
 
 const ButtonContainer = styled.div`
@@ -80,6 +81,27 @@ const PopupImg = styled.img`
   box-shadow: 0 8px 32px rgba(0,0,0,0.18);
 `;
 
+const CloseButton = styled.button`
+  position: absolute;
+  top: 24px;
+  left: 24px;
+ width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--secondary);
+    border: none;
+    cursor: pointer;
+    font-size: 52px;
+  z-index: 30000;
+  transition: color 0.2s;
+&:hover {
+    background: var(--secondary);
+    color: var(--primary);
+    text-decoration: none;
+  }
+`;
+
 export const Cards = () => {
   const [popupProject, setPopupProject] = useState(null);
 
@@ -89,34 +111,34 @@ export const Cards = () => {
         <ScrollAnimation key={id}>
           <CardContainer>
             <ProjectHeading>{project.name}</ProjectHeading>
-            <div>
-              <Container>
-                <ProjectText>{project.info}</ProjectText>
-                <ButtonContainer>
-                  <Button
-                    href={project.netlify}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    icon={<FontAwesomeIcon icon={faGlobe} />}
-                    aria-label="Visit Project"
-                  />
-                  <Button
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    icon={<FontAwesomeIcon icon={faCode} />}
-                    aria-label="View Code"
-                  />
-                  <Button
-                    as="button"
-                    type="button"
-                    onClick={() => setPopupProject(project)}
-                    icon={<FontAwesomeIcon icon={faImage} />}
-                    aria-label="PopUp Demo"
-                  />
-                </ButtonContainer>
-              </Container>
-            </div>
+
+            <Container>
+              <ProjectText>{project.info}</ProjectText>
+              <ButtonContainer>
+                <Button
+                  href={project.netlify}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  icon={<FontAwesomeIcon icon={faGlobe} />}
+                  aria-label="Visit Project"
+                />
+                <Button
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  icon={<FontAwesomeIcon icon={faCode} />}
+                  aria-label="View Code"
+                />
+                <Button
+                  as="button"
+                  type="button"
+                  onClick={() => setPopupProject(project)}
+                  icon={<FontAwesomeIcon icon={faImage} />}
+                  aria-label="PopUp Demo"
+                />
+              </ButtonContainer>
+            </Container>
+
             <TagContainer>
               <p> This was a</p> <p>{project.collab}</p>
               <p>with focus on:</p>  {project.tags.map((tag, index) => (
@@ -129,6 +151,15 @@ export const Cards = () => {
 
       {popupProject && (
         <PopupOverlay onClick={() => setPopupProject(null)}>
+          <CloseButton
+            aria-label="Close"
+            onClick={e => {
+              e.stopPropagation();
+              setPopupProject(null);
+            }}
+          >
+            ×
+          </CloseButton>
           <PopupImg
             src={popupProject.image}
             alt={popupProject.alt}
