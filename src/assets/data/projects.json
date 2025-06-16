@@ -19,7 +19,7 @@
     {
       "name": "Happy Thoughts 2.0",
       "info": "Happy Thoughts 2.0 is a fullstack project built with React and MongoDB. In this version, users must register and log in to post a thought, like a thought or just interact with the app. The backend manages authentication and stores all thoughts securely in a MongoDB database. Messages are displayed in reverse chronological order and the app updates automatically as new thoughts are posted or liked.",
-      "image": "./img/happythoughts2.png",
+      "image": "./img/happythoughts2.webp",
       "alt": "Happy Thoughts 2.0 App",
       "collab": "Team project",
       "tags": [
