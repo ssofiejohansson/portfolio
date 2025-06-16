@@ -17,6 +17,22 @@
       "github": "https://github.com/ssofiejohansson/js-project-todo"
     },
     {
+      "name": "Happy Thoughts 2.0",
+      "info": "Happy Thoughts 2.0 is a fullstack project built with React and MongoDB. In this version, users must register and log in to post a thought, like a thought or just interact with the app. The backend manages authentication and stores all thoughts securely in a MongoDB database. Messages are displayed in reverse chronological order, and the app updates automatically as new thoughts are posted or liked, providing a smooth and interactive user experience.",
+      "image": "./img/happythoughts2.png",
+      "alt": "Happy Thoughts 2.0 App",
+      "collab": "Team project",
+      "tags": [
+        "React",
+        "MongoDB",
+        "Mongoose",
+        "Express",
+        "Node.js"
+      ],
+      "netlify": "https://smilezone78.netlify.app/",
+      "github": "https://github.com/ssofiejohansson/js-project-happy-thoughts-frontend"
+    },
+    {
       "name": "Happy Thoughts",
       "info": "Happy Thoughts is a simple messaging app built with React that lets users share short, uplifting messages with the world. It connects to a shared public API, allowing anyone to post and read happy thoughts in real time. Messages appear in reverse chronological order, with the newest thoughts at the top. Each thought displays the message content and a like count, which can be increased by clicking the heart button. The app updates automatically after new thoughts are posted or liked, creating a smooth and interactive user experience.",
       "image": "./img/happythoughts.webp",
