@@ -337,6 +337,9 @@ export const Nav = () => {
         <NavColumn>
           <NavItem href="/skills" title="My skills" vertical="true" active={location.pathname === "/skills" ? "true" : undefined}>Skills.</NavItem>
           <NavItem href="/contact" title="Get in touch" vertical="true" active={location.pathname === "/contact" ? "true" : undefined}>Contact.</NavItem>
+
+        </NavColumn>
+        <TitleContainer>
           <NavIconButton
             href="https://www.linkedin.com/in/ssofiejohansson"
             target="_blank"
@@ -345,8 +348,6 @@ export const Nav = () => {
           >
             <VerticalIcon icon={faLinkedinIn} />
           </NavIconButton>
-        </NavColumn>
-        <TitleContainer>
           <h1> <TopTitle>Sofie Johansson</TopTitle>
             <BottomTitle>Frontend Developer</BottomTitle></h1>
         </TitleContainer>
