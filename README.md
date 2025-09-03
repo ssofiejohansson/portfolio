@@ -1,2 +1,2 @@
 # personal portfolio
-https://ssofiejohansson.netlify.app/
+https://tiny-monstera-9dd5d5.netlify.app/
